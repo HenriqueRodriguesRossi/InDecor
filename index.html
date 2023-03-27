@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	 <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+	<title>InDecor</title>
+</head>
+<body>
+	<header id="event-description">
+		<div class="disclaimer">
+			<h2>InDecor</h2>
+			<p class="about-event">
+				Um evento para revolucionar sua criatividade
+			</p>
+			<p>
+				Data do evento: 
+			</p>
+			<p class="event-date">
+				Domingo, a partir das 14 horas 
+			</p>
+		</div>
+		<div id="subscribe-form">
+			<p>Preencha o formulário para receber as atualizações do evento</p> 	
+
+			<form id="form">
+				<div class="form-group">
+					<label for="name">Nome</label>
+					<input type="text" name="name" placeholder="Digite o seu nome"  class="required" oninput="nameValidate()">
+					<span class="span-required">Nome dever ser maior!</span>
+				</div>
+				<div class="form-group">
+					<label for="email">E-mail</label>
+					<input type="email" name="email" placeholder="Digite o seu melhor e-mail" class="required" oninput="emailValidate()">
+					<span class="span-required">E-mail inválido!</span>
+				</div>
+				<div class="form-group">
+					<label for="phone">Telefone</label>
+					<input type="text" name="phone" placeholder="Digite o seu WhatsApp" class="required" oninput="celularValidate()">
+					<span class="span-required">Telefone inválido!</span>
+				</div>
+				<div class="form-group">
+					<label for="interest">Principais interesses</label>
+					<select name="interest">
+						<option disabled selected>Selecionar</option>
+						<option value="apartment">Apartamentos</option>
+						<option value="house">Casas</option>
+						<option value="garden">Jardins</option>
+						<option value="other">Outros</option>
+					</select>
+				</div>
+
+				<input type="submit" class="btn" value="Quero me inscrever!">
+			</form>
+		</div>
+	</header>
+	<section class="key-benefits">
+		<h2>O que você vai aprender: </h2>
+		<div class="benefits">
+		<div class="benefit">
+			<div id="benefit-1" class="benefit-img"></div>
+			<p>
+				Lorem ipsum dolor sit amet
+			</p>
+		</div>
+		<div class="benefit">
+			<div id="benefit-2" class="benefit-img"></div>
+			<p>
+				Lorem ipsum dolor sit amet
+			</p>
+		</div>
+		<div class="benefit">
+			<div id="benefit-3" class="benefit-img"></div>
+			<p>
+				Lorem ipsum dolor sit amet
+			</p>
+		</div>
+		</div>
+	</section>
+	<section id="location">
+		<div id="address">
+			<div id="address-details">
+				<i class="bi bi-geo-alt-fill"></i>
+				
+				<div>
+				<p>Rua Anita Franchini, 190</p>
+				<p>Vila Damásio</p>
+				<p>Abertura as 14</p>
+				</div>
+			</div>
+		</div>
+		<div id="about-location">
+			<h3>Local de Destaque</h3>
+				
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</section>
+	<section id="deatils">
+		<div class="deatil" id="detail-01">
+			<img src="hrz-3.jpg" alt="Imagem de uma sala decorada em tons claros">
+			<div class="deatil-description">
+				<h3>Conheça os ambientes que você vai aprender a decorar: </h3>
+			</div>
+		</div>
+		<div class="deatil" id="detail-02">
+		<div class="deatil-description">
+			<h3>Detalhes:</h3>
+			<ul>
+				<li>Posicionamento</li>
+				<li>Aproveitamento do espaço</li>
+				<li>Combinação de cores</li>
+				<li>Organização</li>
+				<li>E muito mais...</li>
+			</ul>
+		</div>
+			<img src="hrz-4.jpg" alt="Sala de jantar decorada em tons de verde">
+		</div>
+		<div class="deatil" id="detail-03">
+		<img src="hrz-5.jpg" alt="Sala decorada em tons escuros">
+		<div class="deatil-description">
+			<h3>Objetos:</h3>
+			<ul>
+				<li>Cadeiras</li>
+				<li>Mesas</li>
+				<li>Espelhos</li>
+				<li>Plantas</li>
+				<li>Cortinas</li>
+				<li>E muito mais...</li>
+			</ul>
+		</div>
+		</div>
+	</section>
+	<section id="cta">
+		<h3>Gostou? Então se inscreva: </h3>
+		<button class="btn">Solicitar inscrição</button>
+	</section>
+	<footer>
+		<h3>InDecor</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.</p>
+		<p><span>Entre em contato:</span> exemplo@gmail.com</p>
+		<p><span>Ou pelo telefone:</span> (55) 93333-3333</p>
+	</footer>
+</body>
+<script src="app.js"></script>
+</html>
